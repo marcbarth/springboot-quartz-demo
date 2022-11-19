@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  testdb:
+    container_name: postgres_testapp_db
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=root
+    ports:
+      - 5433:5432
